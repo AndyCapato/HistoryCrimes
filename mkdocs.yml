@@ -1,0 +1,9 @@
+site_name: Progetto_is
+theme: 
+  name: material
+
+nav:
+  - Indice: index.md
+  - Descrizione del progetto: description.md
+
+
