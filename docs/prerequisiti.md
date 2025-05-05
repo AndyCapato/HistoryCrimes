@@ -226,9 +226,6 @@ L'utente può acquisire elementi utili per progredire nella storia.
 
 - Errore durante il salvataggio: In rari casi, potrebbe verificarsi un errore durante il salvataggio. Il sistema dovrebbe tentare di salvare nuovamente o informare l'utente del problema; in caso di ulteriori problemi, contattare il servizio clienti della piattaforma di gioco.
 
-<<<<<<< HEAD
-
-
 
 **FR4: Inventario ed equipaggiamento**
 
@@ -343,7 +340,16 @@ FR9: Narrativa ed eventi scriptati
 - Gli NPC devono poter assegnare quest al giocatore.
 
 - Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).
->>>>>>> 92d970bc38fd628b98375230a03f7f3339e7ee8d
+
+
+**TFR3: STATISTICHE E PROGRESSIONE**
+- Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:
+- HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile
+- MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante    l'investigazione, l'analisi e la deduzione delle scene del crimine.
+- IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.
+-Velocità: Rappresenta la statistica di velocità delle operazioni durante le varie operazioni di Gameplay
+-Fortuna: Aumenta la possibilità di trovare segreti o aiuti durante il gioco.
+
 
 
 
