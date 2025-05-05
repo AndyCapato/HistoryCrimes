@@ -59,11 +59,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#il-sistema-dovra-garantire-la-possibilita-di-fare-un-salvataggio-automatico-frequentemente" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -242,8 +237,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -278,8 +271,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -294,6 +285,8 @@
                   
 
 
+
+  <h1>PREREQUISITI</h1>
 
 <p><strong>USER STORIES</strong></p>
 <ul>
@@ -571,7 +564,7 @@
 <ul>
 <li>Errore durante il salvataggio: In rari casi, potrebbe verificarsi un errore durante il salvataggio. Il sistema dovrebbe tentare di salvare nuovamente o informare l'utente del problema; in caso di ulteriori problemi, contattare il servizio clienti della piattaforma di gioco.</li>
 </ul>
-<h1 id="il-sistema-dovra-garantire-la-possibilita-di-fare-un-salvataggio-automatico-frequentemente">Il sistema dovrà garantire la possibilità di fare un salvataggio automatico frequentemente.<a class="headerlink" href="#il-sistema-dovra-garantire-la-possibilita-di-fare-un-salvataggio-automatico-frequentemente" title="Permanent link">&para;</a></h1>
+<p>Il sistema dovrà garantire la possibilità di fare un salvataggio automatico frequentemente.</p>
 <p><strong>REQUISITI FUNZIONALI</strong></p>
 <p>FR1: Controlli e movimento</p>
 <p>FR2: Interazione con gli NPC</p>
@@ -583,83 +576,58 @@
 <p>FR8: Stato del gioco</p>
 <p>FR9: Narrativa ed eventi scriptati</p>
 <p><strong>FR1: Controlli e movimento</strong><br />
-- Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.</p>
-<ul>
-<li>
-<p>Il sistema deve permettere al giocatore di controllare il proprio personaggio usando dei dispositivi di input (tastiera o joypad).</p>
-</li>
-<li>
-<p>Il sistema deve permettere al personaggio di muoversi in maniera libera all’interno dell’area di gioco.</p>
-</li>
-<li>
-<p>Il sistema deve gestire le collisioni tra il personaggio del giocatore ed oggetti non penetrabili, come rocce, costruzioni, NPC, ecc.</p>
-</li>
-<li>
-<p>Il sistema deve permettere al personaggio del giocatore di transitare tra diverse zone della mappa .</p>
-</li>
-<li>
-<p>Il sistema deve permettere al personaggio di interagire con oggetti specifici all’interno dell’ambiente di gioco mediante specifiche azioni e rispettando specifici vincoli di vicinanza.</p>
-</li>
-</ul>
+-Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.</p>
+<p>-Il sistema deve permettere al giocatore di controllare il proprio personaggio usando dei dispositivi di input (tastiera o joypad).</p>
+<p>-Il sistema deve permettere al personaggio di muoversi in maniera libera all’interno dell’area di gioco.</p>
+<p>-Il sistema deve gestire le collisioni tra il personaggio del giocatore ed oggetti non penetrabili, come rocce, costruzioni, NPC, ecc.</p>
+<p>-Il sistema deve permettere al personaggio del giocatore di transitare tra diverse zone della mappa .</p>
+<p>-Il sistema deve permettere al personaggio di interagire con oggetti specifici all’interno dell’ambiente di gioco mediante specifiche azioni e rispettando specifici vincoli di vicinanza.</p>
 <p><strong>FR2: Interazione con gli NPC</strong><br />
-- Il sistema deve popolare il mondo con degli NPC.</p>
-<ul>
-<li>
-<p>Il sistema deve permettere ai giocatori di inizializzare un dialogo con gli NPC.</p>
-</li>
-<li>
-<p>Il sistema deve mostrare il testo del dialogo in una parte dedicata della UI.</p>
-</li>
-<li>
-<p>Il sistema deve supportare dialoghi ad opzioni multiple.</p>
-</li>
-<li>
-<p>Gli NPC devono poter assegnare quest al giocatore.</p>
-</li>
-<li>
-<p>Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).</p>
-</li>
-</ul>
+-Il sistema deve popolare il mondo con degli NPC.</p>
+<p>-Il sistema deve permettere ai giocatori di inizializzare un dialogo con gli NPC.</p>
+<p>-Il sistema deve mostrare il testo del dialogo in una parte dedicata della UI.</p>
+<p>-Il sistema deve supportare dialoghi ad opzioni multiple.</p>
+<p>-Gli NPC devono poter assegnare quest al giocatore.</p>
+<p>-Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).</p>
 <p><strong>TFR3: STATISTICHE E PROGRESSIONE</strong><br />
-- Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:<br />
-- HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile<br />
-- MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante    l'investigazione, l'analisi e la deduzione delle scene del crimine.<br />
-- IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.<br />
+-Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:<br />
+-HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile<br />
+-MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante l'investigazione, l'analisi e la deduzione delle scene del crimine.<br />
+-IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.<br />
 -Velocità: Rappresenta la statistica di velocità delle operazioni durante le varie operazioni di Gameplay<br />
 -Fortuna: Aumenta la possibilità di trovare segreti o aiuti durante il gioco.</p>
 <p><strong>FR4: Inventario ed equipaggiamento</strong></p>
-<p>Il sistema dovrà fornire un inventario che il giocatore userà per conservare gli oggetti raccolti.</p>
-<p>Il sistema dovrà mostrare l'inventario tramite una schermata dedicata dell'interfaccia utente.</p>
-<p>Il sistema dovrà permettere al giocatore di usare oggetti consumabili e permanenti dall'inventario.</p>
-<p>Il sistema dovrà permettere al giocatore di visualizzare le descrizioni e le proprietà degli oggetti.</p>
-<p>Il sistema dovrà permettere al giocatore di equipaggiare e rimuovere oggetti negli slot appropriati tramite l'interfaccia utente.</p>
-<p>Il sistema dovrà conferire abilità in base agli oggetti equipaggiati.</p>
-<p>Il sistema dovrà permettere al giocatore di visualizzare nel dettaglio gli oggetti se si tratta di documenti, fondamentali per progredire nel gioco.</p>
+<p>-Il sistema dovrà fornire un inventario che il giocatore userà per conservare gli oggetti raccolti.</p>
+<p>-Il sistema dovrà mostrare l'inventario tramite una schermata dedicata dell'interfaccia utente.</p>
+<p>-Il sistema dovrà permettere al giocatore di usare oggetti consumabili e permanenti dall'inventario.</p>
+<p>-Il sistema dovrà permettere al giocatore di visualizzare le descrizioni e le proprietà degli oggetti.</p>
+<p>-Il sistema dovrà permettere al giocatore di equipaggiare e rimuovere oggetti negli slot appropriati tramite l'interfaccia utente.</p>
+<p>-Il sistema dovrà conferire abilità in base agli oggetti equipaggiati.</p>
+<p>-Il sistema dovrà permettere al giocatore di visualizzare nel dettaglio gli oggetti se si tratta di documenti, fondamentali per progredire nel gioco.</p>
 <p><strong>FR5: Gestione delle missioni</strong></p>
-<p>Il sistema dovrà permettere al giocatore di accettare missioni dagli NPC o da altre fonti (episodi principali).</p>
-<p>Il sistema dovrà fornire una schermata per il Registro Missioni, tracciando le missioni attive e completate, e mostrandone obiettivi e descrizioni.</p>
-<p>Il sistema dovrà tracciare i progressi del giocatore verso gli obiettivi della missione.</p>
-<p>Il sistema dovrà aggiornare automaticamente lo stato della missione al completamento degli obiettivi.</p>
-<p>Il sistema dovrà permettere al giocatore di consegnare le missioni completate all’NPC pertinente o completarle in maniera automatica.</p>
-<p>Il sistema dovrà distribuire le ricompense al completamento della missione.</p>
-<p>Il sistema dovrà localizzare le missioni all'interno delle aree di gioco.</p>
+<p>-Il sistema dovrà permettere al giocatore di accettare missioni dagli NPC o da altre fonti (episodi principali).</p>
+<p>-Il sistema dovrà fornire una schermata per il Registro Missioni, tracciando le missioni attive e completate, e mostrandone obiettivi e descrizioni.</p>
+<p>-Il sistema dovrà tracciare i progressi del giocatore verso gli obiettivi della missione.</p>
+<p>-Il sistema dovrà aggiornare automaticamente lo stato della missione al completamento degli obiettivi.</p>
+<p>-Il sistema dovrà permettere al giocatore di consegnare le missioni completate all’NPC pertinente o completarle in maniera automatica.</p>
+<p>-Il sistema dovrà distribuire le ricompense al completamento della missione.</p>
+<p>-Il sistema dovrà localizzare le missioni all'interno delle aree di gioco.</p>
 <p><strong>FR6: Commercio ed Economia</strong></p>
-<p>Il sistema dovrà tenere traccia della valuta del giocatore.</p>
-<p>Il sistema dovrà offrire una interfaccia per commercio con appositi NPC.</p>
-<p>Il sistema dovrà permettere al giocatore di comprare oggetti dal venditore, deducendone il costo dalla valuta a disposizione.</p>
-<p>Il sistema dovrà permettere al giocatore di vendere oggetti al venditore, aggiungendone il costo alla valuta a disposizione.</p>
+<p>-Il sistema dovrà tenere traccia della valuta del giocatore.</p>
+<p>-Il sistema dovrà offrire una interfaccia per commercio con appositi NPC.</p>
+<p>-Il sistema dovrà permettere al giocatore di comprare oggetti dal venditore, deducendone il costo dalla valuta a disposizione.</p>
+<p>-Il sistema dovrà permettere al giocatore di vendere oggetti al venditore, aggiungendone il costo alla valuta a disposizione.</p>
 <p><strong>FR7: User Interface e User Experience</strong></p>
-<p>Il sistema dovrà fornire un menu principale all'avvio del gioco.</p>
-<p>Il sistema dovrà fornire un menu di gioco accessibile durante l'esplorazione.</p>
-<p>Il sistema dovrà mostrare informazioni essenziali del personaggio sullo schermo durante l'esplorazione.</p>
-<p>Il sistema dovrà mostrare informazioni dettagliate sui personaggi e sui nemici durante il combattimento.</p>
-<p>Il sistema dovrà fornire un chiaro feedback visivo per azioni, cambiamenti di stato, interazioni con NPCs e eventi speciali di indagini.</p>
-<p>Il sistema dovrà mostrare informazioni essenziali relative alle missioni in corso e alla loro posizione.</p>
+<p>-Il sistema dovrà fornire un menu principale all'avvio del gioco.</p>
+<p>-Il sistema dovrà fornire un menu di gioco accessibile durante l'esplorazione.</p>
+<p>-Il sistema dovrà mostrare informazioni essenziali del personaggio sullo schermo durante l'esplorazione.</p>
+<p>-Il sistema dovrà fornire un chiaro feedback visivo per azioni, cambiamenti di stato, interazioni con NPCs e eventi speciali di indagini.</p>
+<p>-Il sistema dovrà mostrare informazioni essenziali relative alle missioni in corso e alla loro posizione.</p>
 <p><strong>FR8: Stato del gioco</strong></p>
-<p>Il sistema dovrà permettere al giocatore di salvare i dettagli del progresso nel gioco.</p>
-<p>Il sistema dovrà permettere il salvataggio presso punti di salvataggio designati o potenzialmente ovunque al di fuori di combattimenti o cutscene.</p>
-<p>Il sistema dovrà permettere al giocatore di caricare uno stato di gioco precedentemente salvato.</p>
-<p>Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.</p>
+<p>-Il sistema dovrà permettere al giocatore di salvare i dettagli del progresso nel gioco.</p>
+<p>-Il sistema dovrà permettere il salvataggio presso punti di salvataggio designati o potenzialmente ovunque al di fuori di combattimenti o cutscene.</p>
+<p>-Il sistema dovrà permettere al giocatore di caricare uno stato di gioco precedentemente salvato.</p>
+<p>-Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.</p>
 
 
 
