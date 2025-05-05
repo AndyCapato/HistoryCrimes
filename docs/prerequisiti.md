@@ -226,7 +226,7 @@ L'utente può acquisire elementi utili per progredire nella storia.
 
 - Errore durante il salvataggio: In rari casi, potrebbe verificarsi un errore durante il salvataggio. Il sistema dovrebbe tentare di salvare nuovamente o informare l'utente del problema; in caso di ulteriori problemi, contattare il servizio clienti della piattaforma di gioco.
 
-
+**TEST DEPLOY + PUSH**
 
 
 
