@@ -226,6 +226,7 @@ L'utente può acquisire elementi utili per progredire nella storia.
 
 - Errore durante il salvataggio: In rari casi, potrebbe verificarsi un errore durante il salvataggio. Il sistema dovrebbe tentare di salvare nuovamente o informare l'utente del problema; in caso di ulteriori problemi, contattare il servizio clienti della piattaforma di gioco.
 
+<<<<<<< HEAD
 
 
 
@@ -296,6 +297,53 @@ Il sistema dovrà permettere al giocatore di caricare uno stato di gioco precede
 Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
 
 Il sistema dovrà garantire la possibilità di fare un salvataggio automatico frequentemente.
+=======
+**REQUISITI FUNZIONALI**
+
+FR1: Controlli e movimento
+
+FR2: Interazione con gli NPC
+
+FR3: Statistiche e progressione
+
+FR4: Inventario ed equipaggiamento
+
+FR5: Gestione delle quest
+
+FR6: Commercio ed economia
+
+FR7: User Interface e User Experience
+
+FR8: Stato del gioco
+
+FR9: Narrativa ed eventi scriptati
+
+**FR1: Controlli e movimento**
+- Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.
+
+- Il sistema deve permettere al giocatore di controllare il proprio personaggio usando dei dispositivi di input (tastiera o joypad).
+
+- Il sistema deve permettere al personaggio di muoversi in maniera libera all’interno dell’area di gioco.
+
+- Il sistema deve gestire le collisioni tra il personaggio del giocatore ed oggetti non penetrabili, come rocce, costruzioni, NPC, ecc.
+
+- Il sistema deve permettere al personaggio del giocatore di transitare tra diverse zone della mappa .
+
+- Il sistema deve permettere al personaggio di interagire con oggetti specifici all’interno dell’ambiente di gioco mediante specifiche azioni e rispettando specifici vincoli di vicinanza.
+
+**FR2: Interazione con gli NPC**
+- Il sistema deve popolare il mondo con degli NPC.
+
+- Il sistema deve permettere ai giocatori di inizializzare un dialogo con gli NPC.
+
+- Il sistema deve mostrare il testo del dialogo in una parte dedicata della UI.
+
+- Il sistema deve supportare dialoghi ad opzioni multiple.
+
+- Gli NPC devono poter assegnare quest al giocatore.
+
+- Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).
+>>>>>>> 92d970bc38fd628b98375230a03f7f3339e7ee8d
 
 
 
