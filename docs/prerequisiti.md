@@ -226,7 +226,76 @@ L'utente può acquisire elementi utili per progredire nella storia.
 
 - Errore durante il salvataggio: In rari casi, potrebbe verificarsi un errore durante il salvataggio. Il sistema dovrebbe tentare di salvare nuovamente o informare l'utente del problema; in caso di ulteriori problemi, contattare il servizio clienti della piattaforma di gioco.
 
-**TEST DEPLOY + PUSH**
+
+
+
+**FR4: Inventario ed equipaggiamento**
+
+Il sistema dovrà fornire un inventario che il giocatore userà per conservare gli oggetti raccolti.
+
+Il sistema dovrà mostrare l'inventario tramite una schermata dedicata dell'interfaccia utente.
+
+Il sistema dovrà permettere al giocatore di usare oggetti consumabili e permanenti dall'inventario.
+
+Il sistema dovrà permettere al giocatore di visualizzare le descrizioni e le proprietà degli oggetti.
+
+Il sistema dovrà permettere al giocatore di equipaggiare e rimuovere oggetti negli slot appropriati tramite l'interfaccia utente.
+
+Il sistema dovrà conferire abilità in base agli oggetti equipaggiati.
+
+Il sistema dovrà permettere al giocatore di visualizzare nel dettaglio gli oggetti se si tratta di documenti, fondamentali per progredire nel gioco.
+
+**FR5: Gestione delle missioni**
+
+Il sistema dovrà permettere al giocatore di accettare missioni dagli NPC o da altre fonti (episodi principali).
+
+Il sistema dovrà fornire una schermata per il Registro Missioni, tracciando le missioni attive e completate, e mostrandone obiettivi e descrizioni.
+
+Il sistema dovrà tracciare i progressi del giocatore verso gli obiettivi della missione.
+
+Il sistema dovrà aggiornare automaticamente lo stato della missione al completamento degli obiettivi.
+
+Il sistema dovrà permettere al giocatore di consegnare le missioni completate all’NPC pertinente o completarle in maniera automatica.
+
+Il sistema dovrà distribuire le ricompense al completamento della missione.
+
+Il sistema dovrà localizzare le missioni all'interno delle aree di gioco.
+
+**FR6: Commercio ed Economia**
+
+Il sistema dovrà tenere traccia della valuta del giocatore.
+
+Il sistema dovrà offrire una interfaccia per commercio con appositi NPC.
+
+Il sistema dovrà permettere al giocatore di comprare oggetti dal venditore, deducendone il costo dalla valuta a disposizione.
+
+Il sistema dovrà permettere al giocatore di vendere oggetti al venditore, aggiungendone il costo alla valuta a disposizione.
+
+**FR7: User Interface e User Experience**
+
+Il sistema dovrà fornire un menu principale all'avvio del gioco.
+
+Il sistema dovrà fornire un menu di gioco accessibile durante l'esplorazione.
+
+Il sistema dovrà mostrare informazioni essenziali del personaggio sullo schermo durante l'esplorazione.
+
+Il sistema dovrà mostrare informazioni dettagliate sui personaggi e sui nemici durante il combattimento.
+
+Il sistema dovrà fornire un chiaro feedback visivo per azioni, cambiamenti di stato, interazioni con NPCs e eventi speciali di indagini.
+
+Il sistema dovrà mostrare informazioni essenziali relative alle missioni in corso e alla loro posizione.
+
+**FR8: Stato del gioco**
+
+Il sistema dovrà permettere al giocatore di salvare i dettagli del progresso nel gioco.
+
+Il sistema dovrà permettere il salvataggio presso punti di salvataggio designati o potenzialmente ovunque al di fuori di combattimenti o cutscene.
+
+Il sistema dovrà permettere al giocatore di caricare uno stato di gioco precedentemente salvato.
+
+Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
+
+Il sistema dovrà garantire la possibilità di fare un salvataggio automatico frequentemente.
 
 
 
