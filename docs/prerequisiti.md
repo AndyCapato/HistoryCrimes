@@ -351,7 +351,25 @@ FR9: Narrativa ed eventi scriptati
 
 -Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
 
+**NFR7: Estetica**
 
+- Il gioco presenta uno stile 3D ultra-realistico; 
+
+- I modelli dei personaggi, l'ambientazione, gli elementi visivi e sonori, devono essere coerenti tra di loro;
+
+- Gli effetti sonori devono segnalare gli eventi del gioco;
+
+- Il gioco deve mantenere la qualità visiva anche su schermi con risoluzioni diverse;
+
+- Il design dovrebbe considerare anche giocatori con disabilità sensoriali, ad esempio offrendo opzioni per regolare contrasto, effetti visivi e livelli audio separati;
+
+**NFR8: Integrità**
+
+- I progressi del giocatore devono essere salvati automaticamente durante la partita;
+
+- Il sistema deve mantenere una copia di backup del salvataggio automatico più recente per permettere il ripristino in caso di corruzione dei dati;
+
+- Il giocatore deve ricevere un'indicazione chiara (es. icona discreta) quando un salvataggio automatico è in corso, per evitare chiusure improvvise;
 
 
 
