@@ -136,7 +136,6 @@ FR7: User Interface e User Experience
 
 FR8: Stato del gioco
 
-FR9: Narrativa ed eventi scriptati
 
 **FR1: Controlli e movimento**
 -Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.
@@ -244,22 +243,34 @@ enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abil
 
 -Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
  
-**NFR5: Portabilità**
 
--Il motore di gioco e l'architettura devono essere progettati per facilitare ragionevolmente potenziali porting futuri verso nuovi sistemi.
+**REQUISITI NON FUNZIONALI**
 
--La gestione dell'input e della risoluzione dello schermo deve essere flessibile.
+**NFR1: Prestazioni**
 
-**NFR6: Accessibilità**
+- Su configurazioni dalle specifiche raccomandate, il gioco dovrà mantenere un frame rate costante di almeno 60 FPS (escludendo le scene cinematiche);
 
--Gli elementi testuali (dialoghi, menu, descrizioni) dovranno supportare dimensioni del carattere regolabili o fornire un'opzione predefinita ad alto contrasto.
+- Su configurazioni dalle specifiche raccomandate, il gioco dovrà garantire il completamento delle transizioni tra le diverse zone della mappa entro cinque secondi;
 
--Le scelte cromatiche adottate nell’interfaccia utente dovrebbero tenere in adeguata considerazione le principali forme di daltonismo, prevedendo l’impiego di indicatori alternativi al colore.
+- Su configurazioni dalle specifiche raccomandate, Il caricamento di uno stato di gioco salvato dovrà completarsi entro 15 secondi sull'hardware;
 
--Dovranno essere forniti controlli del volume separati per l'audio principale, la musica, gli effetti sonori e i dialoghi.
+- Su configurazioni dalle specifiche raccomandate, le transizioni tra le cinematiche e lo stato attivo di gioco dovranno essere quasi istantanee, con ritardo inferiore al secondo.
+Il consumo delle risorse disponibili dovrà essere ragionevolmente compatibile con quello previsto per un semi-open world 3D;
 
--Dovrà essere possibile cambiare la configurazione dei comandi.
+- Su configurazioni dalle specifiche raccomandate, il gioco dovrà registrare tutte le scelte decisive (relative al percorso della storia) prese dal giocatore entro 5 secondi;
 
+**NFR2: Usabilità**
+
+- Tutti gli elementi dell'interfaccia utente (ad esempio, menu, finestre di dialogo, interfaccia delle scene di indagine) dovranno essere chiari, leggibili e facili da navigare usando mouse, tastiera o gamepad;
+
+- L'input del giocatore dovrà risultare reattivo con una latenza minima percepibile;
+
+- Il gioco dovrà fornire un chiaro feedback visivo e audio per le azioni chiave, come puzzle completati, prove importanti raccolte, navigazione nei menu, raccolta oggetti o completamento missioni;
+
+- I giocatori dovranno essere introdotti alle meccaniche principali da un sistema di tutorial opzionali e non intrusivi;
+
+- I controlli dovranno essere riconfigurabili a piacimento dal giocatore.
+Le informazioni importanti dovranno essere sempre a disposizione durante indagini ed esplorazione;
 
 **NFR3: Affidabilità e Stabilità**
 
@@ -278,36 +289,22 @@ enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abil
 -I contenuti di gioco (oggetti, nemici, missioni) dovrebbero essere definiti e gestiti in modo da permettere agli sviluppatori di proporre modifiche o aggiunte in maniera efficace, tramite sistemi di configurazione esterni al codice sorgente principale.        Questa definizione dovrebbe basarsi sull'analisi dell'utenza giocante (fase di testing, recensioni post-lancio).
 
 -I sistemi devo essere differenti ma affini all'interno del gioco, in grado di condividere una logica comune tra esse, implementata nel codice promuovendo così coerenza, riducendo la ridondanza e semplificando la manutenzione e gli aggiornamenti futuri.
-**REQUISITI NON FUNZIONALI**
 
-NFR1: Prestazioni
+**NFR5: Portabilità**
 
-- Su configurazioni dalle specifiche raccomandate, il gioco dovrà mantenere un frame rate costante di almeno 60 FPS (escludendo le scene cinematiche);
+-Il motore di gioco e l'architettura devono essere progettati per facilitare ragionevolmente potenziali porting futuri verso nuovi sistemi.
 
-- Su configurazioni dalle specifiche raccomandate, il gioco dovrà garantire il completamento delle transizioni tra le diverse zone della mappa entro cinque secondi;
+-La gestione dell'input e della risoluzione dello schermo deve essere flessibile.
 
-- Su configurazioni dalle specifiche raccomandate, Il caricamento di uno stato di gioco salvato dovrà completarsi entro 15 secondi sull'hardware;
+**NFR6: Accessibilità**
 
-- Su configurazioni dalle specifiche raccomandate, le transizioni tra le cinematiche e lo stato attivo di gioco dovranno essere quasi istantanee, con ritardo inferiore al secondo.
-Il consumo delle risorse disponibili dovrà essere ragionevolmente compatibile con quello previsto per un semi-open world 3D;
+-Gli elementi testuali (dialoghi, menu, descrizioni) dovranno supportare dimensioni del carattere regolabili o fornire un'opzione predefinita ad alto contrasto.
 
-- Su configurazioni dalle specifiche raccomandate, il gioco dovrà registrare tutte le scelte decisive (relative al percorso della storia) prese dal giocatore entro 5 secondi;
+-Le scelte cromatiche adottate nell’interfaccia utente dovrebbero tenere in adeguata considerazione le principali forme di daltonismo, prevedendo l’impiego di indicatori alternativi al colore.
 
+-Dovranno essere forniti controlli del volume separati per l'audio principale, la musica, gli effetti sonori e i dialoghi.
 
-NFR2: Usabilità
-
-
-- Tutti gli elementi dell'interfaccia utente (ad esempio, menu, finestre di dialogo, interfaccia delle scene di indagine) dovranno essere chiari, leggibili e facili da navigare usando mouse, tastiera o gamepad;
-
-- L'input del giocatore dovrà risultare reattivo con una latenza minima percepibile;
-
-- Il gioco dovrà fornire un chiaro feedback visivo e audio per le azioni chiave, come puzzle completati, prove importanti raccolte, navigazione nei menu, raccolta oggetti o completamento missioni;
-
-- I giocatori dovranno essere introdotti alle meccaniche principali da un sistema di tutorial opzionali e non intrusivi;
-
-- I controlli dovranno essere riconfigurabili a piacimento dal giocatore.
-Le informazioni importanti dovranno essere sempre a disposizione durante indagini ed esplorazione;
-
+-Dovrà essere possibile cambiare la configurazione dei comandi.
 
 **NFR7: Estetica**
 
