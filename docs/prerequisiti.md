@@ -351,6 +351,35 @@ FR9: Narrativa ed eventi scriptati
 
 -Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
 
+**REQUISITI NON FUNZIONALI**
+
+NFR1: Prestazioni
+
+- Su configurazioni dalle specifiche raccomandate, il gioco dovrà mantenere un frame rate costante di almeno 60 FPS (escludendo le scene cinematiche);
+
+- Su configurazioni dalle specifiche raccomandate, il gioco dovrà garantire il completamento delle transizioni tra le diverse zone della mappa entro cinque secondi;
+
+- Su configurazioni dalle specifiche raccomandate, Il caricamento di uno stato di gioco salvato dovrà completarsi entro 15 secondi sull'hardware;
+
+- Su configurazioni dalle specifiche raccomandate, le transizioni tra le cinematiche e lo stato attivo di gioco dovranno essere quasi istantanee, con ritardo inferiore al secondo.
+Il consumo delle risorse disponibili dovrà essere ragionevolmente compatibile con quello previsto per un semi-open world 3D;
+
+- Su configurazioni dalle specifiche raccomandate, il gioco dovrà registrare tutte le scelte decisive (relative al percorso della storia) prese dal giocatore entro 5 secondi;
+
+
+NFR2: Usabilità
+
+
+- Tutti gli elementi dell'interfaccia utente (ad esempio, menu, finestre di dialogo, interfaccia delle scene di indagine) dovranno essere chiari, leggibili e facili da navigare usando mouse, tastiera o gamepad;
+
+- L'input del giocatore dovrà risultare reattivo con una latenza minima percepibile;
+
+- Il gioco dovrà fornire un chiaro feedback visivo e audio per le azioni chiave, come puzzle completati, prove importanti raccolte, navigazione nei menu, raccolta oggetti o completamento missioni;
+
+- I giocatori dovranno essere introdotti alle meccaniche principali da un sistema di tutorial opzionali e non intrusivi;
+
+- I controlli dovranno essere riconfigurabili a piacimento dal giocatore.
+Le informazioni importanti dovranno essere sempre a disposizione durante indagini ed esplorazione;
 
 
 
