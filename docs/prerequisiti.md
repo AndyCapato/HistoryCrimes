@@ -17,35 +17,7 @@
 
 **CASI D'USO**
 
--**NAVIGARE NEL MONDO DI GIOCO**:
-
-**ATTORI**: 
-
-Utente
-
-**DESCRIZIONE**:
-
-L'utente può navigare liberamente nel mondo di gioco.
-
-**PRECONDIZIONI**
-
-- La verifica delle licenze è andata a buon fine
-
-- Il gioco è stato avviato correttamente.
-
-**FLUSSO PRINCIPALE**
-
-- L'utente sceglie una direzione; 
-
-- Il sistema sposta l'avatar nella direzione scelta;
-
-- Viene aggiornato il mondo di gioco;
-
-**FLUSSO ALTERNATIVO**
-
-- L'utente cerca di accedere a un'area non accessibile, viene mostrato un messaggio di errore.
-
--**INTERAGIRE CON GLI ELEMENTI E I PERSONAGGI DEL GIOCO**:
+**INTERAGIRE CON GLI ELEMENTI E I PERSONAGGI DEL GIOCO**:
 
 **ATTORI**: 
 
@@ -70,30 +42,6 @@ L'utente può interagire con gli elementi e i personaggi presenti nel mondo di g
 - Il sistema sposta l'avatar nella direzione scelta;
 
 - Viene aggiornato il mondo di gioco;
-
--**VISUALIZZARE DIARIO PROTAGONISTA**:
-
-**ATTORI**: 
-
-Utente
-
-**DESCRIZIONE**:
-
-L'utente può visualizzare il diario del protagonista.
-
-**PRECONDIZIONI**
-
-- Il gioco è in esecuzione;
-
-- Sono presenti voci nel diario;
-
-**FLUSSO PRINCIPALE**
-
-- L’utente apre il menu;
-
-- Seleziona “Diario”;
-
-- Il sistema mostra la lista delle voci registrate;
 
 -**INTERROGAZIONE DEGLI ALTRI PERSONAGGI**:
 
@@ -169,67 +117,6 @@ L'utente può acquisire elementi utili per progredire nella storia.
 - Inventario pieno: Se l'inventario degli oggetti è pieno, il sistema potrebbe impedire la raccolta di nuovi oggetti o chiedere all'utente di scartarne uno esistente.
 
 - Oggetto già raccolto: Se l'utente tenta di raccogliere un oggetto già presente nel suo inventario, il sistema potrebbe impedirlo o fornire un messaggio indicativo.
-
--**EFFETTUARE SCELTE PER SBLOCCARE PERCORSI ALTERNATIVI:**
-
-**ATTORE**: Utente
-
-**DESCRIZIONE**: L'utente può influenzare lo sviluppo della storia attraverso decisioni.
-
-**PRECONDIZIONI**:
-
-- La verifica delle licenze è andata a buon fine.
-
-- Il gioco è stato avviato correttamente.
-
-- Il gioco raggiunge un punto narrativo in cui è richiesta una scelta.
-
-**FLUSSO PRINCIPALE**:
-
-- Il sistema presenta all'utente diverse opzioni di scelta (testuali o visive).
-
-- L'utente seleziona una delle opzioni.
-
-- Il sistema registra la scelta dell'utente.
-
-- La narrazione prosegue in base alla scelta effettuata, potenzialmente sbloccando nuove scene, dialoghi o interazioni.
-
-**FLUSSO ALTERNATIVO**:
-
-- Scelta con conseguenze immediate: La scelta dell'utente potrebbe avere un impatto immediato sull'ambiente di gioco o sui personaggi.
-
-- Scelta con conseguenze a lungo termine: La scelta dell'utente potrebbe influenzare gli eventi futuri della storia.
-
--**SALVATAGGIO AUTOMATICO DEI PROGRESSI**:
-
-**ATTORE**: Sistema
-
-**DESCRIZIONE**: Il sistema assicura che i progressi dell'utente nel gioco vengano salvati automaticamente per evitare la perdita di dati.
-
-**PRECONDIZIONI**:
-
-- La verifica delle licenze è andata a buon fine.
-
-- Il gioco è stato avviato correttamente.
-
-- L'utente sta attivamente giocando.
-
-**FLUSSO PRINCIPALE**:
-
-- Il sistema monitora costantemente lo stato del gioco e i progressi dell'utente (es. posizione, oggetti raccolti, dialoghi completati, scelte effettuate).
-
-- A intervalli predefiniti o in punti specifici della storia, il sistema esegue un salvataggio automatico dei dati di gioco.
-
-- Il sistema notifica all'utente che il salvataggio è stato completato (es. breve icona a schermo).
-
-**FLUSSO ALTERNATIVO**:
-
-- Errore durante il salvataggio: In rari casi, potrebbe verificarsi un errore durante il salvataggio. Il sistema dovrebbe tentare di salvare nuovamente o informare l'utente del problema; in caso di ulteriori problemi, contattare il servizio clienti della piattaforma di gioco.
-
-
-
-
-Il sistema dovrà garantire la possibilità di fare un salvataggio automatico frequentemente.
 
 **REQUISITI FUNZIONALI**
 
@@ -351,6 +238,23 @@ FR9: Narrativa ed eventi scriptati
 
 -Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
 
+**NFR3: Affidabilità e Stabilità**
+
+-Il software del gioco deve operare in modo stabile, riducendo al minimo i crash inaspettati durante la sessione di gioco.
+
+-Il sistema di salvataggio e caricamento dei progressi di gioco deve essere veloce e affidabile, evitando la corruzione dei file di salvataggio.
+
+-I calcoli fondamentali del gioco, in particolare quelli alla progressione (guadagno di esperienza, effetti delle abilità), devono essere coerenti, prevedibili e riproducibili date le stesse condizioni in input e stato di gioco.
+
+-Il gioco deve essere in grado di gestire errori non gravi (perdite di connessione, file di configurazione mancanti ma con valori predefiniti) senza interrompere immediatamente l'esperienza di gioco.
+
+**NFR4: Manutenibilità**
+
+-Il codice sorgente del gioco dovrà essere strutturato seguendo un design modulare, con componenti ben definiti e interfacce chiare, e dovrà essere adeguatamente documentato per: la correzione di bug, l'aggiornamenti futuri e integrazione di nuove funzionalità da parte del team di sviluppo.
+
+-I contenuti di gioco (oggetti, nemici, missioni) dovrebbero essere definiti e gestiti in modo da permettere agli sviluppatori di proporre modifiche o aggiunte in maniera efficace, tramite sistemi di configurazione esterni al codice sorgente principale.        Questa definizione dovrebbe basarsi sull'analisi dell'utenza giocante (fase di testing, recensioni post-lancio).
+
+-I sistemi devo essere differenti ma affini all'interno del gioco, in grado di condividere una logica comune tra esse, implementata nel codice promuovendo così coerenza, riducendo la ridondanza e semplificando la manutenzione e gli aggiornamenti futuri.
 
 
 
