@@ -278,12 +278,18 @@ FR9: Narrativa ed eventi scriptati
 -Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).
 
 
-**TFR3: STATISTICHE E PROGRESSIONE**
+**FR3: STATISTICHE E PROGRESSIONE**
 -Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:
--HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile
+
+-HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile.
+
 -MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante l'investigazione, l'analisi e la deduzione delle scene del crimine.
--IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.
--Velocità: Rappresenta la statistica di velocità delle operazioni durante le varie operazioni di Gameplay
+
+-IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere 
+enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.
+
+-Velocità: Rappresenta la statistica di velocità delle operazioni durante le varie operazioni di Gameplay.
+
 -Fortuna: Aumenta la possibilità di trovare segreti o aiuti durante il gioco.
 
 
@@ -350,6 +356,23 @@ FR9: Narrativa ed eventi scriptati
 -Il sistema dovrà permettere al giocatore di caricare uno stato di gioco precedentemente salvato.
 
 -Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.
+ 
+**NFR5: Portabilità**
+
+-Il motore di gioco e l'architettura devono essere progettati per facilitare ragionevolmente potenziali porting futuri verso nuovi sistemi.
+
+-La gestione dell'input e della risoluzione dello schermo deve essere flessibile.
+
+**NFR6: Accessibilità**
+
+-Gli elementi testuali (dialoghi, menu, descrizioni) dovranno supportare dimensioni del carattere regolabili o fornire un'opzione predefinita ad alto contrasto.
+
+-Le scelte cromatiche adottate nell’interfaccia utente dovrebbero tenere in adeguata considerazione le principali forme di daltonismo, prevedendo l’impiego di indicatori alternativi al colore.
+
+-Dovranno essere forniti controlli del volume separati per l'audio principale, la musica, gli effetti sonori e i dialoghi.
+
+-Dovrà essere possibile cambiare la configurazione dei comandi.
+
 
 
 
