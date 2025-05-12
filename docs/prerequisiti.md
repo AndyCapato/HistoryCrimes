@@ -29,37 +29,13 @@
 
 L'utente può interagire con gli elementi e i personaggi presenti nel mondo di gioco;
 
-**PRECONDIZIONI**
-
-- La mappa è stata caricata correttamente;
-
-- Il personaggio non giocabile sia nel raggio d'azione del protagonista e sia disponibile al dialogo;
-
-**FLUSSO PRINCIPALE**
-
-- L'utente sceglie una direzione; 
-
-- Il sistema sposta l'avatar nella direzione scelta;
-
-- Viene aggiornato il mondo di gioco;
-
--**INTERROGAZIONE DEGLI ALTRI PERSONAGGI**:
-
-**ATTORE**: 
-
-Utente
-
-**DESCRIZIONE**: 
-
-L'utente può avviare e condurre conversazioni con i personaggi non giocanti (NPC) presenti nel gioco.
-
 **PRECONDIZIONI**:
 
 - La verifica delle licenze è andata a buon fine.
 
 - Il gioco è stato avviato correttamente.
 
-- L'utente ha interagito con un personaggio interrogabile (vedi Caso d'Uso 2).
+- L'utente ha interagito con un personaggio interrogabile.
 
 **FLUSSO PRINCIPALE**:
 
@@ -101,7 +77,7 @@ L'utente può acquisire elementi utili per progredire nella storia.
 
 - Il gioco è stato avviato correttamente.
 
-- L'utente interagisce con un elemento o personaggio che offre un indizio, un oggetto o una dichiarazione (vedi Caso d'Uso 2 e 4).
+- L'utente interagisce con un elemento o personaggio che offre un indizio, un oggetto o una dichiarazione.
 
 **FLUSSO PRINCIPALE**:
 
@@ -112,11 +88,57 @@ L'utente può acquisire elementi utili per progredire nella storia.
 - Gli oggetti vengono aggiunti all'inventario del protagonista (se applicabile).
 
 - Gli indizi e le dichiarazioni vengono registrate nel diario o in un'altra sezione dedicata.
+
 **FLUSSO ALTERNATIVO**:
 
 - Inventario pieno: Se l'inventario degli oggetti è pieno, il sistema potrebbe impedire la raccolta di nuovi oggetti o chiedere all'utente di scartarne uno esistente.
 
 - Oggetto già raccolto: Se l'utente tenta di raccogliere un oggetto già presente nel suo inventario, il sistema potrebbe impedirlo o fornire un messaggio indicativo.
+
+-**EFFETTUARE SCELTE PER SBLOCCARE PERCORSI ALTERNATIVI:**
+
+
+**ATTORE**: Utente
+
+
+**DESCRIZIONE**: L'utente può influenzare lo sviluppo della storia attraverso decisioni.
+
+
+**PRECONDIZIONI**:
+
+
+- La verifica delle licenze è andata a buon fine.
+
+
+- Il gioco è stato avviato correttamente.
+
+
+- Il gioco raggiunge un punto narrativo in cui è richiesta una scelta.
+
+
+**FLUSSO PRINCIPALE**:
+
+
+- Il sistema presenta all'utente diverse opzioni di scelta (testuali o visive).
+
+
+- L'utente seleziona una delle opzioni.
+
+
+- Il sistema registra la scelta dell'utente.
+
+
+- La narrazione prosegue in base alla scelta effettuata, potenzialmente sbloccando nuove scene, dialoghi o interazioni.
+
+
+**FLUSSO ALTERNATIVO**:
+
+
+- Scelta con conseguenze immediate: La scelta dell'utente potrebbe avere un impatto immediato sull'ambiente di gioco o sui personaggi.
+
+
+- Scelta con conseguenze a lungo termine: La scelta dell'utente potrebbe influenzare gli eventi futuri della storia.
+
 
 **REQUISITI FUNZIONALI**
 
