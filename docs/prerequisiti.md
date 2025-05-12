@@ -138,38 +138,38 @@ FR8: Stato del gioco
 
 
 **FR1: Controlli e movimento**
--Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.
+- Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.
 
--Il sistema deve permettere al giocatore di controllare il proprio personaggio usando dei dispositivi di input (tastiera o joypad).
+- Il sistema deve permettere al giocatore di controllare il proprio personaggio usando dei dispositivi di input (tastiera o joypad).
 
--Il sistema deve permettere al personaggio di muoversi in maniera libera all’interno dell’area di gioco.
+- Il sistema deve permettere al personaggio di muoversi in maniera libera all’interno dell’area di gioco.
 
--Il sistema deve gestire le collisioni tra il personaggio del giocatore ed oggetti non penetrabili, come rocce, costruzioni, NPC, ecc.
+- Il sistema deve gestire le collisioni tra il personaggio del giocatore ed oggetti non penetrabili, come rocce, costruzioni, NPC, ecc.
 
--Il sistema deve permettere al personaggio del giocatore di transitare tra diverse zone della mappa .
+- Il sistema deve permettere al personaggio del giocatore di transitare tra diverse zone della mappa .
 
--Il sistema deve permettere al personaggio di interagire con oggetti specifici all’interno dell’ambiente di gioco mediante specifiche azioni e rispettando specifici vincoli di vicinanza.
+- Il sistema deve permettere al personaggio di interagire con oggetti specifici all’interno dell’ambiente di gioco mediante specifiche azioni e rispettando specifici vincoli di vicinanza.
 
 **FR2: Interazione con gli NPC**
--Il sistema deve popolare il mondo con degli NPC.
+- Il sistema deve popolare il mondo con degli NPC.
 
--Il sistema deve permettere ai giocatori di inizializzare un dialogo con gli NPC.
+- Il sistema deve permettere ai giocatori di inizializzare un dialogo con gli NPC.
 
--Il sistema deve mostrare il testo del dialogo in una parte dedicata della UI.
+- Il sistema deve mostrare il testo del dialogo in una parte dedicata della UI.
 
--Il sistema deve supportare dialoghi ad opzioni multiple.
+- Il sistema deve supportare dialoghi ad opzioni multiple.
 
--Gli NPC devono poter assegnare quest al giocatore.
+- Gli NPC devono poter assegnare quest al giocatore.
 
 -Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).
 
 
 **FR3: STATISTICHE E PROGRESSIONE**
--Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:
+- Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:
 
--HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile.
+- HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile.
 
--MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante l'investigazione, l'analisi e la deduzione delle scene del crimine.
+- MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante l'investigazione, l'analisi e la deduzione delle scene del crimine.
 
 -IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere 
 enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.
@@ -274,37 +274,37 @@ Le informazioni importanti dovranno essere sempre a disposizione durante indagin
 
 **NFR3: Affidabilità e Stabilità**
 
--Il software del gioco deve operare in modo stabile, riducendo al minimo i crash inaspettati durante la sessione di gioco.
+- Il software del gioco deve operare in modo stabile, riducendo al minimo i crash inaspettati durante la sessione di gioco.
 
--Il sistema di salvataggio e caricamento dei progressi di gioco deve essere veloce e affidabile, evitando la corruzione dei file di salvataggio.
+- Il sistema di salvataggio e caricamento dei progressi di gioco deve essere veloce e affidabile, evitando la corruzione dei file di salvataggio.
 
--I calcoli fondamentali del gioco, in particolare quelli alla progressione (guadagno di esperienza, effetti delle abilità), devono essere coerenti, prevedibili e riproducibili date le stesse condizioni in input e stato di gioco.
+- I calcoli fondamentali del gioco, in particolare quelli alla progressione (guadagno di esperienza, effetti delle abilità), devono essere coerenti, prevedibili e riproducibili date le stesse condizioni in input e stato di gioco.
 
--Il gioco deve essere in grado di gestire errori non gravi (perdite di connessione, file di configurazione mancanti ma con valori predefiniti) senza interrompere immediatamente l'esperienza di gioco.
+- Il gioco deve essere in grado di gestire errori non gravi (perdite di connessione, file di configurazione mancanti ma con valori predefiniti) senza interrompere immediatamente l'esperienza di gioco.
 
 **NFR4: Manutenibilità**
 
--Il codice sorgente del gioco dovrà essere strutturato seguendo un design modulare, con componenti ben definiti e interfacce chiare, e dovrà essere adeguatamente documentato per: la correzione di bug, l'aggiornamenti futuri e integrazione di nuove funzionalità da parte del team di sviluppo.
+- Il codice sorgente del gioco dovrà essere strutturato seguendo un design modulare, con componenti ben definiti e interfacce chiare, e dovrà essere adeguatamente documentato per: la correzione di bug, l'aggiornamenti futuri e integrazione di nuove funzionalità da parte del team di sviluppo.
 
--I contenuti di gioco (oggetti, nemici, missioni) dovrebbero essere definiti e gestiti in modo da permettere agli sviluppatori di proporre modifiche o aggiunte in maniera efficace, tramite sistemi di configurazione esterni al codice sorgente principale.        Questa definizione dovrebbe basarsi sull'analisi dell'utenza giocante (fase di testing, recensioni post-lancio).
+- I contenuti di gioco (oggetti, nemici, missioni) dovrebbero essere definiti e gestiti in modo da permettere agli sviluppatori di proporre modifiche o aggiunte in maniera efficace, tramite sistemi di configurazione esterni al codice sorgente principale.        Questa definizione dovrebbe basarsi sull'analisi dell'utenza giocante (fase di testing, recensioni post-lancio).
 
--I sistemi devo essere differenti ma affini all'interno del gioco, in grado di condividere una logica comune tra esse, implementata nel codice promuovendo così coerenza, riducendo la ridondanza e semplificando la manutenzione e gli aggiornamenti futuri.
+- I sistemi devo essere differenti ma affini all'interno del gioco, in grado di condividere una logica comune tra esse, implementata nel codice promuovendo così coerenza, riducendo la ridondanza e semplificando la manutenzione e gli aggiornamenti futuri.
 
 **NFR5: Portabilità**
 
--Il motore di gioco e l'architettura devono essere progettati per facilitare ragionevolmente potenziali porting futuri verso nuovi sistemi.
+- Il motore di gioco e l'architettura devono essere progettati per facilitare ragionevolmente potenziali porting futuri verso nuovi sistemi.
 
--La gestione dell'input e della risoluzione dello schermo deve essere flessibile.
+- La gestione dell'input e della risoluzione dello schermo deve essere flessibile.
 
 **NFR6: Accessibilità**
 
--Gli elementi testuali (dialoghi, menu, descrizioni) dovranno supportare dimensioni del carattere regolabili o fornire un'opzione predefinita ad alto contrasto.
+- Gli elementi testuali (dialoghi, menu, descrizioni) dovranno supportare dimensioni del carattere regolabili o fornire un'opzione predefinita ad alto contrasto.
 
--Le scelte cromatiche adottate nell’interfaccia utente dovrebbero tenere in adeguata considerazione le principali forme di daltonismo, prevedendo l’impiego di indicatori alternativi al colore.
+- Le scelte cromatiche adottate nell’interfaccia utente dovrebbero tenere in adeguata considerazione le principali forme di daltonismo, prevedendo l’impiego di indicatori alternativi al colore.
 
--Dovranno essere forniti controlli del volume separati per l'audio principale, la musica, gli effetti sonori e i dialoghi.
+- Dovranno essere forniti controlli del volume separati per l'audio principale, la musica, gli effetti sonori e i dialoghi.
 
--Dovrà essere possibile cambiare la configurazione dei comandi.
+- Dovrà essere possibile cambiare la configurazione dei comandi.
 
 **NFR7: Estetica**
 
