@@ -1,11 +1,16 @@
-site_name: Progetto_is
+site_name: HISTORY CRIMES
 theme: 
   name: material
 
 nav:
-  - Indice: index.md
   - HISTORY CRIMES: description.md
-  - PREREQUISITI: prerequisiti.md
+  - REQUISITI: 
+    - USER STORIES: user_stories.md
+    - CASI D'USO: casi_duso.md
+    - REQUISITI FUNZIONALI: prerequisiti.md
+    - REQUISITI NON FUNZIONALI: requisiti_non_funzionali.md
+  - DIAGRAMMI DI SEQUENZA: diagrammi_sequenza.md 
+  - DIAGRAMMI DI CLASSE: diagrammi_classe.md
 
 
 markdown_extensions:
