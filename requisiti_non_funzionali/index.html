@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../casi_duso/">
+        <link rel="prev" href="../prerequisiti/">
       
       
-        <link rel="next" href="../requisiti_non_funzionali/">
+        <link rel="next" href="../diagrammi_sequenza/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>REQUISITI FUNZIONALI - HISTORY CRIMES</title>
+        <title>REQUISITI NON FUNZIONALI - HISTORY CRIMES</title>
       
     
     
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              REQUISITI FUNZIONALI
+              REQUISITI NON FUNZIONALI
             
           </span>
         </div>
@@ -294,6 +294,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../prerequisiti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    REQUISITI FUNZIONALI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -309,36 +332,13 @@
   
   
   <span class="md-ellipsis">
-    REQUISITI FUNZIONALI
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../requisiti_non_funzionali/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     REQUISITI NON FUNZIONALI
     
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -427,99 +427,127 @@
 
 
 
-  <h1>REQUISITI FUNZIONALI</h1>
+  <h1>REQUISITI NON FUNZIONALI</h1>
 
-<p><strong>REQUISITI FUNZIONALI</strong></p>
-<p>FR1: Controlli e movimento</p>
-<p>FR2: Interazione con gli NPC</p>
-<p>FR3: Statistiche e progressione</p>
-<p>FR4: Inventario ed equipaggiamento</p>
-<p>FR5: Gestione delle quest</p>
-<p>FR6: Commercio ed economia</p>
-<p>FR7: User Interface e User Experience</p>
-<p>FR8: Stato del gioco</p>
-<p><strong>FR1: Controlli e movimento</strong><br />
-- Il sistema deve visualizzare il mondo di gioco da una prospettiva 3D.</p>
+<p><strong>NFR1: Prestazioni</strong></p>
 <ul>
 <li>
-<p>Il sistema deve permettere al giocatore di controllare il proprio personaggio usando dei dispositivi di input (tastiera o joypad).</p>
+<p>Su configurazioni dalle specifiche raccomandate, il gioco dovrà mantenere un frame rate costante di almeno 60 FPS (escludendo le scene cinematiche);</p>
 </li>
 <li>
-<p>Il sistema deve permettere al personaggio di muoversi in maniera libera all’interno dell’area di gioco.</p>
+<p>Su configurazioni dalle specifiche raccomandate, il gioco dovrà garantire il completamento delle transizioni tra le diverse zone della mappa entro cinque secondi;</p>
 </li>
 <li>
-<p>Il sistema deve gestire le collisioni tra il personaggio del giocatore ed oggetti non penetrabili, come rocce, costruzioni, NPC, ecc.</p>
+<p>Su configurazioni dalle specifiche raccomandate, Il caricamento di uno stato di gioco salvato dovrà completarsi entro 15 secondi sull'hardware;</p>
 </li>
 <li>
-<p>Il sistema deve permettere al personaggio del giocatore di transitare tra diverse zone della mappa .</p>
+<p>Su configurazioni dalle specifiche raccomandate, le transizioni tra le cinematiche e lo stato attivo di gioco dovranno essere quasi istantanee, con ritardo inferiore al secondo.<br />
+Il consumo delle risorse disponibili dovrà essere ragionevolmente compatibile con quello previsto per un semi-open world 3D;</p>
 </li>
 <li>
-<p>Il sistema deve permettere al personaggio di interagire con oggetti specifici all’interno dell’ambiente di gioco mediante specifiche azioni e rispettando specifici vincoli di vicinanza.</p>
+<p>Su configurazioni dalle specifiche raccomandate, il gioco dovrà registrare tutte le scelte decisive (relative al percorso della storia) prese dal giocatore entro 5 secondi;</p>
 </li>
 </ul>
-<p><strong>FR2: Interazione con gli NPC</strong><br />
-- Il sistema deve popolare il mondo con degli NPC.</p>
+<p><strong>NFR2: Usabilità</strong></p>
 <ul>
 <li>
-<p>Il sistema deve permettere ai giocatori di inizializzare un dialogo con gli NPC.</p>
+<p>Tutti gli elementi dell'interfaccia utente (ad esempio, menu, finestre di dialogo, interfaccia delle scene di indagine) dovranno essere chiari, leggibili e facili da navigare usando mouse, tastiera o gamepad;</p>
 </li>
 <li>
-<p>Il sistema deve mostrare il testo del dialogo in una parte dedicata della UI.</p>
+<p>L'input del giocatore dovrà risultare reattivo con una latenza minima percepibile;</p>
 </li>
 <li>
-<p>Il sistema deve supportare dialoghi ad opzioni multiple.</p>
+<p>Il gioco dovrà fornire un chiaro feedback visivo e audio per le azioni chiave, come puzzle completati, prove importanti raccolte, navigazione nei menu, raccolta oggetti o completamento missioni;</p>
 </li>
 <li>
-<p>Gli NPC devono poter assegnare quest al giocatore.</p>
+<p>I giocatori dovranno essere introdotti alle meccaniche principali da un sistema di tutorial opzionali e non intrusivi;</p>
+</li>
+<li>
+<p>I controlli dovranno essere riconfigurabili a piacimento dal giocatore.<br />
+Le informazioni importanti dovranno essere sempre a disposizione durante indagini ed esplorazione;</p>
 </li>
 </ul>
-<p>-Alcuni NPC potranno mostrare schemi di movimento di base (come camminare lungo percorsi predefiniti).</p>
-<p><strong>FR3: STATISTICHE E PROGRESSIONE</strong><br />
-- Il sistema fornisce le seguenti statistiche potenziabili dal giocatore:</p>
+<p><strong>NFR3: Affidabilità e Stabilità</strong></p>
 <ul>
 <li>
-<p>HP (Punti Salute) Rappresenta la salute fisica del personaggio giocabile.</p>
+<p>Il software del gioco deve operare in modo stabile, riducendo al minimo i crash inaspettati durante la sessione di gioco.</p>
 </li>
 <li>
-<p>MP (Mental Point) Rappresenta le capacità del detective nella concetrazione durante l'investigazione, l'analisi e la deduzione delle scene del crimine.</p>
+<p>Il sistema di salvataggio e caricamento dei progressi di gioco deve essere veloce e affidabile, evitando la corruzione dei file di salvataggio.</p>
+</li>
+<li>
+<p>I calcoli fondamentali del gioco, in particolare quelli alla progressione (guadagno di esperienza, effetti delle abilità), devono essere coerenti, prevedibili e riproducibili date le stesse condizioni in input e stato di gioco.</p>
+</li>
+<li>
+<p>Il gioco deve essere in grado di gestire errori non gravi (perdite di connessione, file di configurazione mancanti ma con valori predefiniti) senza interrompere immediatamente l'esperienza di gioco.</p>
 </li>
 </ul>
-<p>-IQ (Intelligenza) Rappresenta statistica primaria e fondamentale, determina la capacità di risolvere <br />
-enigmi, scovare indizi, compredere informazioni complesse e migliorie nelle abilità d'investigazione.</p>
-<p>-Velocità: Rappresenta la statistica di velocità delle operazioni durante le varie operazioni di Gameplay.</p>
-<p>-Fortuna: Aumenta la possibilità di trovare segreti o aiuti durante il gioco.</p>
-<p><strong>FR4: Inventario ed equipaggiamento</strong></p>
-<p>-Il sistema dovrà fornire un inventario che il giocatore userà per conservare gli oggetti raccolti.</p>
-<p>-Il sistema dovrà mostrare l'inventario tramite una schermata dedicata dell'interfaccia utente.</p>
-<p>-Il sistema dovrà permettere al giocatore di usare oggetti consumabili e permanenti dall'inventario.</p>
-<p>-Il sistema dovrà permettere al giocatore di visualizzare le descrizioni e le proprietà degli oggetti.</p>
-<p>-Il sistema dovrà permettere al giocatore di equipaggiare e rimuovere oggetti negli slot appropriati tramite l'interfaccia utente.</p>
-<p>-Il sistema dovrà conferire abilità in base agli oggetti equipaggiati.</p>
-<p>-Il sistema dovrà permettere al giocatore di visualizzare nel dettaglio gli oggetti se si tratta di documenti, fondamentali per progredire nel gioco.</p>
-<p><strong>FR5: Gestione delle missioni</strong></p>
-<p>-Il sistema dovrà permettere al giocatore di accettare missioni dagli NPC o da altre fonti (episodi principali).</p>
-<p>-Il sistema dovrà fornire una schermata per il Registro Missioni, tracciando le missioni attive e completate, e mostrandone obiettivi e descrizioni.</p>
-<p>-Il sistema dovrà tracciare i progressi del giocatore verso gli obiettivi della missione.</p>
-<p>-Il sistema dovrà aggiornare automaticamente lo stato della missione al completamento degli obiettivi.</p>
-<p>-Il sistema dovrà permettere al giocatore di consegnare le missioni completate all’NPC pertinente o completarle in maniera automatica.</p>
-<p>-Il sistema dovrà distribuire le ricompense al completamento della missione.</p>
-<p>-Il sistema dovrà localizzare le missioni all'interno delle aree di gioco.</p>
-<p><strong>FR6: Commercio ed Economia</strong></p>
-<p>-Il sistema dovrà tenere traccia della valuta del giocatore.</p>
-<p>-Il sistema dovrà offrire una interfaccia per commercio con appositi NPC.</p>
-<p>-Il sistema dovrà permettere al giocatore di comprare oggetti dal venditore, deducendone il costo dalla valuta a disposizione.</p>
-<p>-Il sistema dovrà permettere al giocatore di vendere oggetti al venditore, aggiungendone il costo alla valuta a disposizione.</p>
-<p><strong>FR7: User Interface e User Experience</strong></p>
-<p>-Il sistema dovrà fornire un menu principale all'avvio del gioco.</p>
-<p>-Il sistema dovrà fornire un menu di gioco accessibile durante l'esplorazione.</p>
-<p>-Il sistema dovrà mostrare informazioni essenziali del personaggio sullo schermo durante l'esplorazione.</p>
-<p>-Il sistema dovrà fornire un chiaro feedback visivo per azioni, cambiamenti di stato, interazioni con NPCs e eventi speciali di indagini.</p>
-<p>-Il sistema dovrà mostrare informazioni essenziali relative alle missioni in corso e alla loro posizione.</p>
-<p><strong>FR8: Stato del gioco</strong></p>
-<p>-Il sistema dovrà permettere al giocatore di salvare i dettagli del progresso nel gioco.</p>
-<p>-Il sistema dovrà permettere il salvataggio presso punti di salvataggio designati o potenzialmente ovunque al di fuori di combattimenti o cutscene.</p>
-<p>-Il sistema dovrà permettere al giocatore di caricare uno stato di gioco precedentemente salvato.</p>
-<p>-Il sistema dovrà gestire le impostazioni audio, video, e dei controlli di gioco.</p>
+<p><strong>NFR4: Manutenibilità</strong></p>
+<ul>
+<li>
+<p>Il codice sorgente del gioco dovrà essere strutturato seguendo un design modulare, con componenti ben definiti e interfacce chiare, e dovrà essere adeguatamente documentato per: la correzione di bug, l'aggiornamenti futuri e integrazione di nuove funzionalità da parte del team di sviluppo.</p>
+</li>
+<li>
+<p>I contenuti di gioco (oggetti, nemici, missioni) dovrebbero essere definiti e gestiti in modo da permettere agli sviluppatori di proporre modifiche o aggiunte in maniera efficace, tramite sistemi di configurazione esterni al codice sorgente principale.        Questa definizione dovrebbe basarsi sull'analisi dell'utenza giocante (fase di testing, recensioni post-lancio).</p>
+</li>
+<li>
+<p>I sistemi devo essere differenti ma affini all'interno del gioco, in grado di condividere una logica comune tra esse, implementata nel codice promuovendo così coerenza, riducendo la ridondanza e semplificando la manutenzione e gli aggiornamenti futuri.</p>
+</li>
+</ul>
+<p><strong>NFR5: Portabilità</strong></p>
+<ul>
+<li>
+<p>Il motore di gioco e l'architettura devono essere progettati per facilitare ragionevolmente potenziali porting futuri verso nuovi sistemi.</p>
+</li>
+<li>
+<p>La gestione dell'input e della risoluzione dello schermo deve essere flessibile.</p>
+</li>
+</ul>
+<p><strong>NFR6: Accessibilità</strong></p>
+<ul>
+<li>
+<p>Gli elementi testuali (dialoghi, menu, descrizioni) dovranno supportare dimensioni del carattere regolabili o fornire un'opzione predefinita ad alto contrasto.</p>
+</li>
+<li>
+<p>Le scelte cromatiche adottate nell’interfaccia utente dovrebbero tenere in adeguata considerazione le principali forme di daltonismo, prevedendo l’impiego di indicatori alternativi al colore.</p>
+</li>
+<li>
+<p>Dovranno essere forniti controlli del volume separati per l'audio principale, la musica, gli effetti sonori e i dialoghi.</p>
+</li>
+<li>
+<p>Dovrà essere possibile cambiare la configurazione dei comandi.</p>
+</li>
+</ul>
+<p><strong>NFR7: Estetica</strong></p>
+<ul>
+<li>
+<p>Il gioco presenta uno stile 3D ultra-realistico; </p>
+</li>
+<li>
+<p>I modelli dei personaggi, l'ambientazione, gli elementi visivi e sonori, devono essere coerenti tra di loro;</p>
+</li>
+<li>
+<p>Gli effetti sonori devono segnalare gli eventi del gioco;</p>
+</li>
+<li>
+<p>Il gioco deve mantenere la qualità visiva anche su schermi con risoluzioni diverse;</p>
+</li>
+<li>
+<p>Il design dovrebbe considerare anche giocatori con disabilità sensoriali, ad esempio offrendo opzioni per regolare contrasto, effetti visivi e livelli audio separati;</p>
+</li>
+</ul>
+<p><strong>NFR8: Integrità</strong></p>
+<ul>
+<li>
+<p>I progressi del giocatore devono essere salvati automaticamente durante la partita;</p>
+</li>
+<li>
+<p>Il sistema deve mantenere una copia di backup del salvataggio automatico più recente per permettere il ripristino in caso di corruzione dei dati;</p>
+</li>
+<li>
+<p>Il giocatore deve ricevere un'indicazione chiara (es. icona discreta) quando un salvataggio automatico è in corso, per evitare chiusure improvvise;</p>
+</li>
+</ul>
 
 
 
