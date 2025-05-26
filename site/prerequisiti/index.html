@@ -325,32 +325,6 @@
 </ul>
 <p><strong>DESCRIZIONE</strong>:</p>
 <p>L'utente può interagire con gli elementi e i personaggi presenti nel mondo di gioco;</p>
-<p><strong>PRECONDIZIONI</strong></p>
-<ul>
-<li>
-<p>La mappa è stata caricata correttamente;</p>
-</li>
-<li>
-<p>Il personaggio non giocabile sia nel raggio d'azione del protagonista e sia disponibile al dialogo;</p>
-</li>
-</ul>
-<p><strong>FLUSSO PRINCIPALE</strong></p>
-<ul>
-<li>
-<p>L'utente sceglie una direzione; </p>
-</li>
-<li>
-<p>Il sistema sposta l'avatar nella direzione scelta;</p>
-</li>
-<li>
-<p>Viene aggiornato il mondo di gioco;</p>
-</li>
-</ul>
-<p>-<strong>INTERROGAZIONE DEGLI ALTRI PERSONAGGI</strong>:</p>
-<p><strong>ATTORE</strong>: </p>
-<p>Utente</p>
-<p><strong>DESCRIZIONE</strong>: </p>
-<p>L'utente può avviare e condurre conversazioni con i personaggi non giocanti (NPC) presenti nel gioco.</p>
 <p><strong>PRECONDIZIONI</strong>:</p>
 <ul>
 <li>
@@ -360,7 +334,7 @@
 <p>Il gioco è stato avviato correttamente.</p>
 </li>
 <li>
-<p>L'utente ha interagito con un personaggio interrogabile (vedi Caso d'Uso 2).</p>
+<p>L'utente ha interagito con un personaggio interrogabile.</p>
 </li>
 </ul>
 <p><strong>FLUSSO PRINCIPALE</strong>:</p>
@@ -413,7 +387,7 @@
 <p>Il gioco è stato avviato correttamente.</p>
 </li>
 <li>
-<p>L'utente interagisce con un elemento o personaggio che offre un indizio, un oggetto o una dichiarazione (vedi Caso d'Uso 2 e 4).</p>
+<p>L'utente interagisce con un elemento o personaggio che offre un indizio, un oggetto o una dichiarazione.</p>
 </li>
 </ul>
 <p><strong>FLUSSO PRINCIPALE</strong>:</p>
@@ -428,14 +402,55 @@
 <p>Gli oggetti vengono aggiunti all'inventario del protagonista (se applicabile).</p>
 </li>
 <li>
-<p>Gli indizi e le dichiarazioni vengono registrate nel diario o in un'altra sezione dedicata.<br />
-<strong>FLUSSO ALTERNATIVO</strong>:</p>
+<p>Gli indizi e le dichiarazioni vengono registrate nel diario o in un'altra sezione dedicata.</p>
 </li>
+</ul>
+<p><strong>FLUSSO ALTERNATIVO</strong>:</p>
+<ul>
 <li>
 <p>Inventario pieno: Se l'inventario degli oggetti è pieno, il sistema potrebbe impedire la raccolta di nuovi oggetti o chiedere all'utente di scartarne uno esistente.</p>
 </li>
 <li>
 <p>Oggetto già raccolto: Se l'utente tenta di raccogliere un oggetto già presente nel suo inventario, il sistema potrebbe impedirlo o fornire un messaggio indicativo.</p>
+</li>
+</ul>
+<p>-<strong>EFFETTUARE SCELTE PER SBLOCCARE PERCORSI ALTERNATIVI:</strong></p>
+<p><strong>ATTORE</strong>: Utente</p>
+<p><strong>DESCRIZIONE</strong>: L'utente può influenzare lo sviluppo della storia attraverso decisioni.</p>
+<p><strong>PRECONDIZIONI</strong>:</p>
+<ul>
+<li>
+<p>La verifica delle licenze è andata a buon fine.</p>
+</li>
+<li>
+<p>Il gioco è stato avviato correttamente.</p>
+</li>
+<li>
+<p>Il gioco raggiunge un punto narrativo in cui è richiesta una scelta.</p>
+</li>
+</ul>
+<p><strong>FLUSSO PRINCIPALE</strong>:</p>
+<ul>
+<li>
+<p>Il sistema presenta all'utente diverse opzioni di scelta (testuali o visive).</p>
+</li>
+<li>
+<p>L'utente seleziona una delle opzioni.</p>
+</li>
+<li>
+<p>Il sistema registra la scelta dell'utente.</p>
+</li>
+<li>
+<p>La narrazione prosegue in base alla scelta effettuata, potenzialmente sbloccando nuove scene, dialoghi o interazioni.</p>
+</li>
+</ul>
+<p><strong>FLUSSO ALTERNATIVO</strong>:</p>
+<ul>
+<li>
+<p>Scelta con conseguenze immediate: La scelta dell'utente potrebbe avere un impatto immediato sull'ambiente di gioco o sui personaggi.</p>
+</li>
+<li>
+<p>Scelta con conseguenze a lungo termine: La scelta dell'utente potrebbe influenzare gli eventi futuri della storia.</p>
 </li>
 </ul>
 <p><strong>REQUISITI FUNZIONALI</strong></p>
